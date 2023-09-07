@@ -23,9 +23,10 @@ services:
       - backend.env
     environment:
       - JAEGER_AGENT_HOST=jaeger
-      - DASHBOARD_URL=http://localhost:9003/
-      - STOREFRONT_URL=http://localhost:3009/
-      - ALLOWED_HOSTS=localhost,api,storefront,saleor-app-checkout,127.0.0.1,10.128.0.4
+      - DASHBOARD_URL=http://34.136.0.47:9003/
+      - STOREFRONT_URL=http://34.136.0.47:3009/
+      - ALLOWED_HOSTS=localhost,api,storefront,saleor-app-checkout,127.0.0.1,10.128.0.12,34.136.0.47
+
 
 
   dashboard:
