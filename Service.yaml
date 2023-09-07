@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: saleor-service
+spec:
+  selector:
+    app: saleor
+  ports:
+    - protocol: TCP
+      port: 80 # The port you want to expose externally
+      targetPort: 3009 # The container port your application is listening on
+  type: LoadBalancer
